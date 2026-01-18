@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Événements Campus - MFT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding-top: 80px;
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            border-radius: 0 0 20px 20px;
+        }
+        .event-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .event-header {
+            background: linear-gradient(to right, #0d6efd, #0b5ed7);
+            color: white;
+            padding: 20px;
+        }
+        .event-body {
+            padding: 25px;
+        }
+        .event-date {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        .badge-custom {
+            background: #198754;
+            font-size: 0.8em;
+            padding: 5px 10px;
+        }
+        .container {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MFT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="page-header">
+        <div class="container text-center">
+            <h1><i class="fas fa-calendar-alt me-3"></i>Événements du Campus</h1>
+            <p class="lead">Découvrez les hackathons et événements à venir sur le campus ONS</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                
+                <div class="card event-card">
+                    <div class="event-header">
+                        <h3 class="mb-2">Hackathon IA & Data Science</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar me-2"></i>15-17 Novembre 2023
+                            <i class="fas fa-map-marker-alt ms-3 me-2"></i>Campus ONS
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <p>48h de programmation intensive en Python et algorithmique. Compétition ouverte à tous les étudiants en informatique.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge badge-custom">Python & IA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card event-card">
+                    <div class="event-header">
+                        <h3 class="mb-2">Workshop Programmation C</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar me-2"></i>5 Décembre 2023
+                            <i class="fas fa-map-marker-alt ms-3 me-2"></i>Salle B12
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <p>Session pratique approfondie en programmation procédurale en langage C. Animé par des experts de l'industrie.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge bg-info">Algorithmique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card event-card">
+                    <div class="event-header">
+                        <h3 class="mb-2">Compétition Cybersécurité</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar me-2"></i>12 Décembre 2023
+                            <i class="fas fa-map-marker-alt ms-3 me-2"></i>Campus ONS
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <p>Défis CTF (Capture The Flag) en sécurité informatique. Thèmes : systèmes d'exploitation, transmission de données et architectures réseaux.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge bg-warning">Sécurité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card event-card">
+                    <div class="event-header">
+                        <h3 class="mb-2">Journée Innovation Web</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar me-2"></i>20 Décembre 2023
+                            <i class="fas fa-map-marker-alt ms-3 me-2"></i>Amphithéâtre A
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <p>Ateliers pratiques sur le développement Frontend et optimisation de bases de données. Présentations de projets étudiants.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge bg-success">Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

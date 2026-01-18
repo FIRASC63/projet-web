@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Programmation Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MFT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container py-5 mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bold">Quiz Programmation Web</h1>
+                    <p class="lead">Testez vos connaissances sur HTML, CSS et JavaScript</p>
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle"></i> 7 questions - Score sur 20 - Bonne chance !
+                    </div>
+                </div>
+
+                <form id="quizForm">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Question 1: Que signifie HTML ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                                <label class="form-check-label" for="q1a">HyperText Markup Language</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                                <label class="form-check-label" for="q1b">Hyper Transfer Markup Language</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                                <label class="form-check-label" for="q1c">High Tech Modern Language</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">Question 2: Quelle balise HTML5 est utilisée pour le pied de page ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                                <label class="form-check-label" for="q2a">&lt;footer&gt;</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                                <label class="form-check-label" for="q2b">&lt;bottom&gt;</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                                <label class="form-check-label" for="q2c">&lt;end&gt;</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">Question 3: En CSS, quelle propriété change la couleur du texte ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                                <label class="form-check-label" for="q3a">color</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                                <label class="form-check-label" for="q3b">text-color</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                                <label class="form-check-label" for="q3c">font-color</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">Question 4: Quelle méthode JavaScript affiche une boîte de dialogue ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                                <label class="form-check-label" for="q4a">alert()</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                                <label class="form-check-label" for="q4b">message()</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                                <label class="form-check-label" for="q4c">dialog()</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="mb-0">Question 5: Quelle classe Bootstrap crée un bouton primaire ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                                <label class="form-check-label" for="q5a">btn-primary</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                                <label class="form-check-label" for="q5b">btn-main</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                                <label class="form-check-label" for="q5c">button-primary</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-purple text-white">
+                            <h5 class="mb-0">Question 6: Quel est le rôle principal de JavaScript ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                                <label class="form-check-label" for="q6a">Ajouter de l'interactivité</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                                <label class="form-check-label" for="q6b">Styliser les pages</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                                <label class="form-check-label" for="q6c">Structurer le contenu</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-5">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Question 7: Quelle propriété CSS permet de créer un design responsive ?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                                <label class="form-check-label" for="q7a">@media queries</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                                <label class="form-check-label" for="q7b">@responsive</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                                <label class="form-check-label" for="q7c">@screen-size</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-5">
+                        <button type="reset" class="btn btn-secondary btn-lg">
+                            <i class="bi bi-arrow-clockwise"></i> Réinitialiser
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-check-circle"></i> Soumettre le Quiz
+                        </button>
+                    </div>
+                </form>
+
+                <div id="result" class="card text-center d-none">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0">Résultat du Quiz</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="display-1 mb-3" id="score">0/20</div>
+                        <h5 id="message" class="mb-3"></h5>
+                        <div class="progress mb-4" style="height: 20px;">
+                            <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                        <div id="corrections" class="text-start mb-4"></div>
+                        <button id="retryBtn" class="btn btn-outline-primary">
+                            <i class="bi bi-arrow-repeat"></i> Recommencer le Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><h5>Mohamed Firas Trabelsi</h5><p>Développeur Logiciel Full Stack</p></div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://github.com" class="text-white me-3"><i class="bi bi-github"></i></a>
+                    <a href="https://linkedin.com" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="mailto:medfirastr@gmail.com" class="text-white"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="text-center mb-0">&copy; 2024 Mohamed Firas Trabelsi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const correctAnswers = {
+            q1: 'a',
+            q2: 'a',
+            q3: 'a',
+            q4: 'a',
+            q5: 'a',
+            q6: 'a',
+            q7: 'a'
+        };
+
+        const explanations = {
+            q1: "HTML signifie HyperText Markup Language. C'est le langage de balisage standard pour les pages web.",
+            q2: "La balise &lt;footer&gt; est utilisée pour le pied de page en HTML5.",
+            q3: "La propriété 'color' en CSS change la couleur du texte.",
+            q4: "La méthode alert() affiche une boîte de dialogue en JavaScript.",
+            q5: "La classe Bootstrap pour un bouton primaire est 'btn-primary'.",
+            q6: "Le rôle principal de JavaScript est d'ajouter de l'interactivité aux pages web.",
+            q7: "Les @media queries permettent de créer des designs responsives en CSS."
+        };
+    
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+           
+            let score = 0;
+            let correctionsHTML = '<h6>Corrections :</h6>';
+            
+            for (let i = 1; i <= 7; i++) {
+                const questionName = 'q' + i;
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                const isCorrect = selectedAnswer && selectedAnswer.value === correctAnswers[questionName];
+                
+                if (isCorrect) {
+                    score += 1;
+                    correctionsHTML += `
+                        <div class="alert alert-success mb-2">
+                            <strong>Question ${i}:</strong> Correct! ${explanations[questionName]}
+                        </div>
+                    `;
+                } else {
+                    correctionsHTML += `
+                        <div class="alert alert-danger mb-2">
+                            <strong>Question ${i}:</strong> Incorrect. ${explanations[questionName]}
+                        </div>
+                    `;
+                }
+            }
+            
+            const scoreOn20 = Math.round((score / 7) * 20);
+            const percentage = (score / 7) * 100;
+            
+            let message = '';
+            if (score === 7) {
+                message = '🎉 Excellent! Vous êtes un expert en programmation web!';
+            } else if (score >= 5) {
+                message = '👍 Très bon! Vous avez de solides connaissances.';
+            } else if (score >= 3) {
+                message = '😊 Pas mal! Continuez à apprendre.';
+            } else {
+                message = '📚 Revisitez le cours et réessayez!';
+            }
+            
+            document.getElementById('score').textContent = `${scoreOn20}/20`;
+            document.getElementById('message').textContent = message;
+            document.getElementById('progressBar').style.width = `${percentage}%`;
+            document.getElementById('progressBar').textContent = `${score}/7 questions`;
+            document.getElementById('corrections').innerHTML = correctionsHTML;
+            
+            document.getElementById('result').classList.remove('d-none');
+            document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        document.getElementById('retryBtn').addEventListener('click', function() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('result').classList.add('d-none');
+            document.querySelector('h1').scrollIntoView({ behavior: 'smooth' });
+        }); 
+        document.addEventListener('DOMContentLoaded', function() {
+            const style = document.createElement('style');
+            style.textContent = `
+                .bg-purple {
+                    background-color: #6f42c1 !important;
+                }
+                .quiz-card:hover {
+                    transform: translateY(-2px);
+                    transition: transform 0.2s;
+                }
+                .form-check-input:checked {
+                    background-color: #0d6efd;
+                    border-color: #0d6efd;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
